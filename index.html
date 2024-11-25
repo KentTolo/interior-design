@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redsoil Construction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">RedSoil</span>
+            <span class="logo-separator">|</span>
+            <span class="logo-subtext">Interior Design</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <h1 data-aos="fade-up">
+                <span class="line">Crafting</span>
+                <span class="line">Luxurious</span>
+                <span class="line">Spaces</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200">Where elegance meets functionality</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#portfolio" class="cta-button primary">View Our Work</a>
+                <a href="#contact" class="cta-button secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Expertise</h2>
+            <p>Transforming vision into reality</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-kitchen-set"></i>
+                </div>
+                <h3>Kitchen Cabinets</h3>
+                <p>Bespoke kitchen solutions crafted with precision and style</p>
+                <ul class="service-features">
+                    <li>Custom Measurements</li>
+                    <li>Premium Materials</li>
+                    <li>Modern Hardware</li>
+                    <li>Smart Storage Solutions</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-door-closed"></i>
+                </div>
+                <h3>Wardrobes</h3>
+                <p>Elegant storage solutions for your personal space</p>
+                <ul class="service-features">
+                    <li>Walk-in Closets</li>
+                    <li>Sliding Systems</li>
+                    <li>LED Lighting</li>
+                    <li>Modular Design</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h3>TV Units</h3>
+                <p>Contemporary entertainment centers for modern living</p>
+                <ul class="service-features">
+                    <li>Floating Designs</li>
+                    <li>Cable Management</li>
+                    <li>Ambient Lighting</li>
+                    <li>Media Storage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <p>Our commitment to excellence</p>
+        </div>
+        <div class="portfolio-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+            <button class="filter-btn" data-filter="wardrobe">Wardrobes</button>
+            <button class="filter-btn" data-filter="tv-unit">TV Units</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Portfolio items will be dynamically added via JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Get in Touch</h2>
+                <p>Let's discuss your dream project</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+ (266) 5906-0166</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>redsoil_interiors@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Leribe, St. Monicas</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-houzz"></i></a>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form" data-aos="fade-left">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone">
+                    <label for="phone">Your Phone</label>
+                </div>
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="">Select Service</option>
+                        <option value="kitchen">Kitchen Cabinets</option>
+                        <option value="wardrobe">Wardrobes</option>
+                        <option value="tv-unit">TV Units</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span class="logo-text">Elite</span>
+                    <span class="logo-separator">|</span>
+                    <span class="logo-subtext">Interior Design</span>
+                </div>
+                <p>Creating exceptional living spaces through innovative design and master craftsmanship.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li>Kitchen Cabinets</li>
+                    <li>Wardrobes</li>
+                    <li>TV Units</li>
+                    <li>Custom Furniture</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; RedSoil Construction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
